@@ -1,0 +1,84 @@
+
+@import 'https://fonts.googleapis.com/css?family=Rajdhani:700';
+
+/* Navbar */
+.navbar {
+  background-color: #DDD;
+  border-bottom: solid #CCC 2px;
+}
+
+.navbar-collapse hr {
+  width: 50%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-color: black;
+}
+
+.navbar-collapse a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+#centered-div { 
+  width: 200px; 
+  height: 20px; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  margin-left: -100px; 
+  margin-top: -30px;
+}
+
+/* h1 animation */
+.jumbo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; /* -100px or whatever half the text height */
+  background: #73CDE7;
+}
+@keyframes background {
+  from {
+    background-position: 0 0%;
+  }
+  to {
+    background-position: 0 -200px;
+  }
+}
+
+.h1-center {
+  position: relative;
+  top: 50%;
+}
+
+h1 {
+  margin-top: -80px;
+  text-align: center;
+  font-size: 200px;
+  font-family: 'Rajdhani', sans-serif;
+  background: url(../img/bubbles.png) repeat;
+  background-size: 200px auto;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: background 10s infinite linear;
+}
+
+@media (max-width: 790px) {
+  h1 {
+    font-size: 100px;
+  }
+}
+
+.main-content {
+  background-color: #aaa;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.panel-footer {
+  position: relative;
+  margin-top: 10px;
+}
