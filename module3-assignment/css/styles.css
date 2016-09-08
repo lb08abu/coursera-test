@@ -5,6 +5,7 @@
 .navbar {
   background-color: #DDD;
   border-bottom: solid #CCC 2px;
+  margin-bottom: 0;
 }
 
 .navbar-collapse hr {
@@ -19,23 +20,15 @@
   font-weight: bold;
 }
 
-#centered-div { 
-  width: 200px; 
-  height: 20px; 
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  margin-left: -100px; 
-  margin-top: -30px;
-}
-
 /* h1 animation */
 .jumbo {
   position: absolute;
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0; /* -100px or whatever half the text height */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px; /* -100px or whatever half the text height */
+  padding-bottom: 0px;
   background: #73CDE7;
 }
 @keyframes background {
@@ -53,7 +46,7 @@
 }
 
 h1 {
-  margin-top: -80px;
+  margin-top: -100px;
   text-align: center;
   font-size: 200px;
   font-family: 'Rajdhani', sans-serif;
@@ -67,6 +60,7 @@ h1 {
 @media (max-width: 790px) {
   h1 {
     font-size: 100px;
+    margin-top: -50px;
   }
 }
 
